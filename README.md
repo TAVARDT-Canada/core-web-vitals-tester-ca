@@ -49,3 +49,7 @@ For full web performance audits and real-world loading simulations:
 ## Web Performance and Speed Optimization Advisory
 
 For Canadian digital platforms aligning with W3C Standards and Canadian Digital Performance Architecture, contact the specialists at **TAVARDT Canada**.
+
+***
+
+© 2026 TAVARDT. All rights reserved.
