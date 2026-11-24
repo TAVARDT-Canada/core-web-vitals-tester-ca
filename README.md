@@ -1,14 +1,13 @@
 # Core Web Vitals and Page Speed Performance Auditor
 
 [![Core Web Vitals Auditor](https://img.shields.io/badge/TAVARDT-Core%20Web%20Vitals-5b3cf5.svg)](https://tools.tavardt.com/ca/core-web-vitals-checker/)
-[![Jurisdiction](https://img.shields.io/badge/Jurisdiction-Canada-00C853.svg)](https://ag.tavardt.com/ca/)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 
 Audits bilingual page speed, TTFB latency, compression efficiency, and layout stability.
 
-Developed and maintained by the web performance engineering division of **[TAVARDT Canada](https://ag.tavardt.com/ca/)**.
+Developed and maintained by the web performance engineering division of **TAVARDT Canada**.
 
----
+***
 
 ## Core Web Vitals Audit Capabilities
 
@@ -18,7 +17,7 @@ Developed and maintained by the web performance engineering division of **[TAVAR
 * **HTTP Compression Verification**: Audits Brotli and Gzip payload compression configuration.
 * **W3C Performance Health Score**: Quantitative 0 to 100 performance score with prioritized remediation guidance.
 
----
+***
 
 ## Installation and Execution
 
@@ -33,20 +32,20 @@ python cwv_tester.py https://company.ca
 To output results in structured JSON format:
 
 ```bash
-python cwv_tester.py https://company.ca --json
+python cwv_tester.py https://company.ca -json
 ```
 
----
+***
 
 ## Comprehensive Web Diagnostic
 
 For full web performance audits and real-world loading simulations:
 
-* **[Official Core Web Vitals Checker Tool](https://tools.tavardt.com/ca/core-web-vitals-checker/)**
-* **[TAVARDT Canada Enterprise Portal](https://ag.tavardt.com/ca/)**
+* **Official Core Web Vitals Checker Tool**
+* **TAVARDT Canada Enterprise Portal**
 
----
+***
 
 ## Web Performance and Speed Optimization Advisory
 
-For Canadian digital platforms aligning with W3C Standards and Canadian Digital Performance Architecture, contact the specialists at **[TAVARDT Canada](https://ag.tavardt.com/ca/contact/)**.
+For Canadian digital platforms aligning with W3C Standards and Canadian Digital Performance Architecture, contact the specialists at **TAVARDT Canada**.
