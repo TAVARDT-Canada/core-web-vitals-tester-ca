@@ -6,8 +6,6 @@
 
 Audits bilingual page speed, TTFB latency, compression efficiency, and layout stability.
 
-Developed and maintained by the web performance engineering division of **TAVARDT**.
-
 ***
 
 ## Core Web Vitals Audit Capabilities
@@ -38,15 +36,6 @@ python cwv_tester.py https://company.ca -json
 
 ***
 
-## Comprehensive Web Diagnostic
-
-For full web performance audits and real-world loading simulations:
-
-* **Official Core Web Vitals Checker Tool**
-* **TAVARDT Enterprise Portal**
-
-***
-
 ## Web Performance and Speed Optimization Advisory
 
 For Canadian digital platforms aligning with W3C Standards and Canadian Digital Performance Architecture, contact the specialists at **TAVARDT**.
@@ -62,7 +51,7 @@ For Canadian digital platforms aligning with W3C Standards and Canadian Digital 
 ***
 
 ### License
-Released under the MIT License. See [LICENSE](LICENSE) for full details.
+Released under the MIT License.
 
 ***
 
