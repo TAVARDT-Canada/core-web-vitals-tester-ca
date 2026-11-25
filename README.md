@@ -2,6 +2,7 @@
 
 [![Core Web Vitals Auditor](https://img.shields.io/badge/TAVARDT-Core%20Web%20Vitals-5b3cf5.svg)](https://tools.tavardt.com/ca/core-web-vitals-checker/)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 Audits bilingual page speed, TTFB latency, compression efficiency, and layout stability.
 
@@ -57,6 +58,11 @@ For Canadian digital platforms aligning with W3C Standards and Canadian Digital 
 * **Corporate Portal:** https://ag.tavardt.com/ca/
 * **Diagnostic Suite:** https://tools.tavardt.com/ca/
 * **Technical Contact:** https://ag.tavardt.com/ca/contact/
+
+***
+
+### License
+Released under the MIT License. See [LICENSE](LICENSE) for full details.
 
 ***
 
