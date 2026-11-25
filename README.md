@@ -4,23 +4,34 @@
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Audits bilingual page speed, TTFB latency, compression efficiency, and layout stability.
+Audits TTFB latency, HTTP compression, render-blocking scripts, and Cumulative Layout Shift stability.
+
+Developed and maintained by the web performance engineering and digital standards division at **TAVARDT**.
 
 ***
 
-## Core Web Vitals Audit Capabilities
+## Risk Vectors and Operational Impact in Web Performance
 
-* **Server Response and TTFB Analysis**: Precise measurement of initial Time to First Byte latency across Canadian networks.
-* **Render-Blocking Resource Inspection**: Detection of synchronous CSS stylesheets and JavaScript assets delaying initial rendering.
-* **Visual Stability Audit (CLS)**: Verification of explicit image dimensions and lazy loading implementations to eliminate layout shifts.
-* **HTTP Compression Verification**: Audits Brotli and Gzip payload compression configuration.
-* **W3C Performance Health Score**: Quantitative 0 to 100 performance score with prioritized remediation guidance.
+Elevated server latency and unoptimised frontend scripts damage organic visibility and conversion metrics across Canadian web properties. When platforms deliver uncompressed assets and sluggish TTFB, user retention suffers noticeable declines.
+
+Missing image attributes cause layout instability that degrades Cumulative Layout Shift scores during page rendering. Comprehensive performance testing safeguards search placement and delivers consistently swift user interactions.
+
+***
+
+## Core Technical Audit Capabilities
+
+* **High-Precision TTFB Measurement**: Calculates initial server response latency via high-resolution timers, flagging delays above 600 ms and severe bottlenecks over 1200 ms.
+* **HTTP Payload Compression Inspection**: Verifies server delivery via modern Brotli or Gzip compression, penalising uncompressed HTML payloads by 15 points.
+* **Render-Blocking Resource Detection**: Identifies synchronous head stylesheets and scripts lacking async, defer, or module attributes that stall DOM construction.
+* **Visual Stability and CLS Audit**: Scans image elements for missing explicit width and height dimensions to eliminate layout shifts, auditing lazy loading adoption.
+* **Resource Hints Inspection**: Detects the strategic implementation of preconnect and preload directives for critical assets.
+* **W3C Performance Health Score**: Computes an objective 0 to 100 compliance metric classifying platforms as GOOD (FAST), NEEDS IMPROVEMENT, or POOR (SLOW).
 
 ***
 
 ## Installation and Execution
 
-Requires Python 3.8 or higher.
+Requires Python 3.8 or higher with zero external packages.
 
 ```bash
 git clone https://github.com/TAVARDT-Canada/core-web-vitals-tester-ca.git
@@ -28,17 +39,36 @@ cd core-web-vitals-tester-ca
 python cwv_tester.py https://company.ca
 ```
 
-To output results in structured JSON format:
+To output structured JSON for automated pipelines and quality audits:
 
 ```bash
-python cwv_tester.py https://company.ca -json
+python cwv_tester.py https://company.ca -j
 ```
+
+***
+
+## Technical Frequently Asked Questions
+
+### 1. How does high Time to First Byte (TTFB) degrade overall Core Web Vitals?
+Elevated TTFB delays the arrival of initial HTML, postponing subsequent asset parsing and degrading Largest Contentful Paint metrics. When server response exceeds 600 milliseconds, the tool deducts points and alerts teams to cache bottlenecks.
+
+### 2. Why do synchronous head scripts and CSS stylesheets stall initial page rendering?
+Unoptimised script tags and stylesheets block the browser parser from building the render tree until they are downloaded and executed. The auditor flags assets missing async, defer, or module attributes to highlight render-blocking liabilities.
+
+### 3. What causes Cumulative Layout Shift (CLS) issues when images lack explicit dimensions?
+Without pre-declared width and height attributes in HTML, browsers cannot calculate and reserve the required layout space before image download. This triggers sudden content jumps that harm visual stability scores and user interaction.
+
+### 4. What is the operational performance impact of missing Brotli or Gzip compression?
+Uncompressed text payloads unnecessarily inflate network transfer size by up to seventy percent over mobile and broadband connections. Serving uncompressed HTML wastes bandwidth and immediately penalises the calculated performance health score.
+
+### 5. How do resource hints like preconnect and preload accelerate document loading?
+Preconnect and preload hints initiate early DNS lookups and TLS handshakes for third-party origins and critical fonts. The validator identifies these annotations to verify that browser priority queues are effectively configured.
 
 ***
 
 ## Web Performance and Speed Optimization Advisory
 
-For Canadian digital platforms aligning with W3C Standards and Canadian Digital Performance Architecture, contact the specialists at **TAVARDT**.
+For multi-region architectures and technical alignment with W3C Performance Standards, consult **TAVARDT**.
 
 ***
 
@@ -51,7 +81,7 @@ For Canadian digital platforms aligning with W3C Standards and Canadian Digital 
 ***
 
 ### License
-Released under the MIT License.
+Distributed under the MIT License. See the LICENSE file for complete terms.
 
 ***
 
